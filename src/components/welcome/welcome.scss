@@ -1,0 +1,50 @@
+.welcome {
+  margin-top: 150px;
+
+  &__content {
+    max-width: 1000px;
+    text-align: center;
+
+    &-title {
+      font-size: var(--font-size-title);
+      font-weight: var(--font-weight-bold);
+
+      @include mobile(620px) {
+        font-size: 40px;
+      }
+    }
+
+    &-subtitle {
+      font-size: 24px;
+      font-weight: var(--font-weight-bold);
+
+      margin-top: 20px;
+      margin-bottom: 50px;
+
+      @include mobile(500px) {
+        line-height: 130%;
+      }
+    }
+
+    &-video {
+      position: relative;
+      z-index: 6;
+
+      @include mobile(1030px) {
+        max-width: 800px;
+      }
+
+      @include mobile(820px) {
+        max-width: 600px;
+      }
+
+      @include mobile(620px) {
+        max-width: 470px;
+      }
+
+      @include mobile(500px) {
+        max-width: 355px;
+      }
+    }
+  }
+}

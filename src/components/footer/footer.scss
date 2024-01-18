@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 150px;
+  padding: 50px 0px 32px;
+  background-color: var(--matt-black-color);
+
+  & a {
+    color: var(--white-color);
+  }
+
+  &__content {
+    color: var(--white-color);
+
+    &-menu {
+      display: flex;
+      justify-content: space-around;
+
+      &-list {
+        & li:nth-child(2) {
+          margin-top: 40px;
+        }
+
+        &-title {
+          font-size: 24px;
+          font-weight: var(--font-weight-bold);
+        }
+
+        &-item {
+          margin-top: 20px;
+          line-height: 130%;
+        }
+      }
+    }
+
+    &-app {
+      display: flex;
+      justify-content: center;
+      gap: 39px;
+
+      margin-top: 50px;
+    }
+
+    &-copy {
+      max-width: 806px;
+      margin: 52px auto 0px;
+
+      &-text {
+        font-size: 12px;
+        text-align: center;
+        line-height: normal;
+      }
+    }
+
+    &-info {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+
+      margin-top: 30px;
+    }
+  }
+}

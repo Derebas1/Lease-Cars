@@ -1,0 +1,82 @@
+.why {
+  margin-top: 150px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-title {
+      color: var(--matt-black-color);
+      font-size: var(--font-size-title);
+      font-weight: var(--font-weight-bold);
+
+      @include mobile(550px) {
+        font-size: var(--font-size, 40px);
+        text-align: center;
+      }
+    }
+
+    &-info {
+      margin-top: 50px;
+
+      display: flex;
+      gap: 40px;
+
+      @include mobile(1020px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+        @include mobile(1020px) {
+          max-width: 310px;
+        }
+
+        &-picture {
+          width: 150px;
+          height: 150px;
+
+          border: 1px solid var(--blue-ribbon-color);
+          border-radius: 150px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &-dealers {
+            width: 60px;
+            height: 39px;
+          }
+
+          &-discounted {
+            width: 58px;
+            height: 55px;
+          }
+
+          &-payments {
+            width: 60px;
+            height: 42px;
+          }
+
+          &-upgrade {
+            width: 39px;
+            height: 40px;
+          }
+        }
+
+        &-title {
+          font-size: var(--font-size, 24px);
+          font-weight: var(--font-weight-bold);
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}

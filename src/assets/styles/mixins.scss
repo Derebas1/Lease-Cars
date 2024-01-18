@@ -1,0 +1,30 @@
+@mixin mobile($mw) {
+  @media (max-width: $mw) {
+    @content;
+  }
+}
+
+// @mixin font($fz: 14px, $font-weights: 400, $color: $black-out) {
+//   font-size: $fz;
+//   font-weight: $font-weights;
+//   color: $color;
+// }
+
+// @mixin logo($flex: "row") {
+//   @if $flex == "row" {
+//     flex-direction: row;
+//   } @else if $flex == "column" {
+//     flex-direction: column;
+//   }
+// }
+
+// @mixin button($type: "default") {
+//   background-color: map-get($color-change, $type);
+//   padding: 10px 25px 12px;
+//   color: #fff;
+//   border-radius: 4px;
+//   font-size: 14px;
+//   line-height: 18px;
+//   letter-spacing: 2px;
+//   text-transform: uppercase;
+// }
