@@ -5,5 +5,5 @@ import './leasing/leasing';
 import './welcome/welcome';
 import './important/important';
 import './cars/cars';
-import './form/form';
+import './contact/contact';
 import './footer/footer';
