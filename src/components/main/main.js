@@ -5,7 +5,7 @@ const sliderSlide = document.querySelectorAll(
 );
 
 let sliderCount = 0;
-let sliderWidth = slider.offsetWidth;
+let sliderWidth = slider.offsetWidth + 16;
 
 function nextSlide() {
   sliderCount++;
@@ -17,20 +17,10 @@ function nextSlide() {
   autoRollSlide();
 }
 
-// function prevSlide() {
-//   sliderCount--;
-
-//   if (sliderCount < 0) {
-//     sliderCount = sliderSlide.length - 1;
-//   }
-
-//   autoRollSlide();
-// }
-
 function autoRollSlide() {
   sliderContent.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
 }
 
-// setInterval(() => {
-//   nextSlide();
-// }, 3000);
+setInterval(() => {
+  nextSlide();
+}, 3000);
