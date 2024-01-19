@@ -4,4 +4,6 @@ import './why/why';
 import './leasing/leasing';
 import './welcome/welcome';
 import './important/important';
+import './cars/cars';
+import './form/form';
 import './footer/footer';
